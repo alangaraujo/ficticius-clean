@@ -26,7 +26,7 @@ mvnw package
 Após criação do arquivo executável (extensão JAR), ele estará na pasta /target, acessando o diretório do projeto, executar a aplicação via linha de comando:
 
 ```
-java -jar ficticius-clean-1.0.0.jar
+java -jar ficticius-clean-0.0.1-SNAPSHOT.jar
 ```
 
 ## Para Testar
