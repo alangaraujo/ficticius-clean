@@ -1,14 +1,19 @@
 package com.alanaraujo.ficticiusclean.api.controller;
 
-import static com.alanaraujo.ficticiusclean.api.controller.ResponseFactory.*;
-import static com.alanaraujo.ficticiusclean.api.mapper.ModeloMapper.*;
+import static com.alanaraujo.ficticiusclean.api.controller.ResponseFactory.makeBADREQUEST;
+import static com.alanaraujo.ficticiusclean.api.controller.ResponseFactory.makeCONFLICT;
+import static com.alanaraujo.ficticiusclean.api.controller.ResponseFactory.makeCREATED;
+import static com.alanaraujo.ficticiusclean.api.controller.ResponseFactory.makeNOCONTENT;
+import static com.alanaraujo.ficticiusclean.api.controller.ResponseFactory.makeNOTFOUND;
+import static com.alanaraujo.ficticiusclean.api.controller.ResponseFactory.makeOK;
+import static com.alanaraujo.ficticiusclean.api.mapper.ModeloMapper.dtoParaEntidade;
+import static com.alanaraujo.ficticiusclean.api.mapper.ModeloMapper.entidadeParaDto;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
